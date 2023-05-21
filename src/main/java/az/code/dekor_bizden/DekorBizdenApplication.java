@@ -13,10 +13,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class DekorBizdenApplication {
-
-    @Value("${a.fuad:test}")
-    static String parol;
-
     public static void main(String[] args) {
         SpringApplication.run(DekorBizdenApplication.class, args);
 
@@ -37,7 +33,6 @@ public class DekorBizdenApplication {
     @Profile("dev")
     CommandLineRunner createInitialMasaDekor(MasaDekorService masaDekorService){
         return (args) -> {
-            System.out.println("PAROL ========"+parol);
 
             for (int i = 0; i <0; i++) {
                 MasaDekor masaDekor = new MasaDekor();
