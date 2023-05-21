@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api-script/admin.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form id="form" action="admin.html" method="post">
+            <h1>Xina Create Dekor </h1>
+
+
+            <fieldset>
+
+                <legend><span class="number">1</span> Your Basic Info</legend>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+
+                <label for="code">item code:</label>
+                <input type="text" id="code" name="itemCode">
+
+                <label for="price">price:</label>
+                <input type="number" id="price" name="price">
+
+                <label for="guest">guest count:</label>
+                <input type="number" id="guest" name="guest_count">
+
+                <!-- <label for="img_cover">Select image cover:</label>
+                <input type="file" id="img_cover" onchange="readFile(this)" name="cover_img" accept="image/*">
+                <br> -->
+
+                <label for="img_cover">add image cover:</label>
+                <input type="url" id="img_cover" name="cover_img">
+                <br>
+                <br>
+
+                <label for="img_one">add image one:</label>
+                <input type="url" id="img_one" name="img_one">
+                <br>
+                <br>
+
+                <label for="img_one">add image two:</label>
+                <input type="url" id="img_two" name="img_two">
+                <br>
+                <br>
+
+                <label for="img_one">add image three:</label>
+                <input type="url" id="img_three" name="img_three">
+                <br>
+                <br>
+
+                <label for="img_one">add image four:</label>
+                <input type="url" id="img_four" name="img_four">
+
+
+  
+                <br><br>
+                <label for="desc">Description:</label>
+                <textarea id="desc" name="description"></textarea>
+
+
+
+                <label for="type">Type dekor :</label>
+                <select id="type" name="type">
+                    <optgroup label="set">
+                        <option value="standart">standart</option>
+                        <option value="vip">vip</option>
+                        <option value="full">full</option>
+                    </optgroup>
+
+                </select>
+
+
+            </fieldset>
+
+            <button type="submit">Create</button>
+
+        </form>
+
+
+    </div>
+
+
+    <script src="api-script/admin-xina-api.js"></script>
+
+</body>
+
+
+</html>
